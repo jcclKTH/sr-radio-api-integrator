@@ -19,20 +19,6 @@ Data Source: Sveriges Radio Open API.
 
 Core Concepts: REST APIs, JSON, Promises, Event Handling.
 
-**Code Snippet (API Consumption)**
-Example of how the application handles data fetching and error management:
-
-JavaScript
-
-// Asynchronous function to fetch channel data
-const getChannels = async () => {
-  const data = await (await fetch(baseUrl)).json();
-  data.channels.forEach(channel => {
-    // Dynamic DOM creation based on API response
-    searchProgramEl.add(new Option(channel.name, channel.id));
-    // ...
-  });
-}
 **How to Run**
 Clone the repository.
 
